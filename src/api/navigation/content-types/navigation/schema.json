@@ -47,6 +47,15 @@
         }
       },
       "required": false
+    },
+    "titleAr": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
     }
   }
 }

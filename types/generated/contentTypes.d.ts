@@ -772,6 +772,13 @@ export interface ApiNavigationNavigation extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    titleAr: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
